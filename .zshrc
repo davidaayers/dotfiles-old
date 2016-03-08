@@ -8,6 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="kphoen"
 
 export EDITOR='subl -w'
+export LESS="R"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -59,6 +60,14 @@ plugins=(git mvn git-extras vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
+export HOMEBREW_GITHUB_API_TOKEN=559e883c07ff27c6ba06d81fead4a2f52106d634
+
 # Customize to your needs...
 export PATH=$PATH:~/bin
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR JENV TO WORK!!!
+[[ -s "/Users/davida/.jenv/bin/jenv-init.sh" ]] && source "/Users/davida/.jenv/bin/jenv-init.sh" && source "/Users/davida/.jenv/commands/completion.sh"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
