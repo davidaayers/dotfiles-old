@@ -60,7 +60,7 @@ plugins=(git mvn git-extras vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
-export HOMEBREW_GITHUB_API_TOKEN=559e883c07ff27c6ba06d81fead4a2f52106d634
+export HOMEBREW_GITHUB_API_TOKEN=$(cat ~/.dotfiles/homebrew_api_token)
 
 # Customize to your needs...
 export PATH=$PATH:~/bin
